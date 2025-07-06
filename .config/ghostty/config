@@ -1,0 +1,11 @@
+font-feature = "-calt"
+mouse-hide-while-typing = true
+background-opacity = 0.95
+background-blur = true
+macos-titlebar-style = "tabs"
+macos-titlebar-proxy-icon = "hidden"
+title = "code"
+macos-icon = "chalkboard"
+quick-terminal-position = "left"
+keybind = global:cmd+shift+space=toggle_quick_terminal
+theme = "tokyonight"
