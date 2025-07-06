@@ -15,3 +15,4 @@ brew "randomplum/gtkwave/gtkwave", args: ["HEAD"]
 cask "font-monaspace-nerd-font"
 cask "font-noto-sans-symbols-2"
 cask "raycast"
+cask "ghostty"
