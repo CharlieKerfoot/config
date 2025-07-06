@@ -1,7 +1,7 @@
 #!/bin/zsh
 set -e
 
-echo "[*] Starting dotfiles setup..."
+echo "[*] Starting config setup..."
 
 if ! command -v brew >/dev/null 2>&1; then
   echo "[*] Installing Homebrew..."
@@ -19,11 +19,11 @@ else
   echo "[✓] Homebrew is already installed."
 fi
 
-if [[ -f "$HOME/dotfiles/Brewfile" ]]; then
+if [[ -f "$HOME/config/Brewfile" ]]; then
   echo "[*] Installing packages from Brewfile..."
-  brew bundle --file="$HOME/dotfiles/Brewfile"
+  brew bundle --file="$HOME/config/Brewfile"
 else
-  echo "[!] No Brewfile found at $HOME/dotfiles/Brewfile"
+  echo "[!] No Brewfile found at $HOME/config/Brewfile"
 fi
 
 if [[ "$SHELL" != *zsh ]]; then
@@ -40,4 +40,4 @@ else
   echo "[✓] Default shell is already zsh."
 fi
 
-echo "[✓] Dotfiles setup complete."
+echo "[✓] config setup complete."
